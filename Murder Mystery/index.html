@@ -7,30 +7,33 @@
     <title>Landing Page</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
+    <!-- Single Fog Overlay Layer -->
+    <div class="fog-layer"></div>
 
-<header>
-    <nav>
-        <ul>
-            <li><a href="#"">Home</a></li>
-            <li><a href="#">Play</a></li>
-            <li><a href="#">Rules</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#"">Home</a></li>
+                <li><a href="#">Play</a></li>
+                <li><a href="./Rules/index.html">Rules</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section class="hero">
-    <div class="overlay">
-        <h1>Welcome to Our Murder Mystery Party</h1>
-        <p>Ready to play?</p>
-        <button class="shrink-border">Game Start</button>
-        <button class="shrink-border">How To Play</button>
-    </div>
-</section>
+    <section class="main">
+        <div class="overlay">
+            <h1>Welcome to: Murder Mystery Party</h1>
+            <p>Ready to play?</p>
+            <button class="shrink-border">Game Start</button>
+            <button class="shrink-border" onclick = "location.href='./Rules/index.html'">How To Play</button>
+        </div>
+    </section>
 
-<footer>
-    <p>&copy; 2024 Z. All rights reserved.</p>
-</footer>
+    <footer>
+        <p>&copy; 2024 Murder Mystery Part by Z. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
