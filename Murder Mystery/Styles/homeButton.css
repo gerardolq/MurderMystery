@@ -1,0 +1,43 @@
+/* Back to Home Button Styles */
+#back-to-home {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent; /* Transparent background */
+    background-image: url('../images/home.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 50%; /* Circular button */
+    width: 50px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    overflow: hidden; /* Ensure image fits within the button */
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for animations */
+    z-index: 1000; /* Ensures button is above other elements */
+}
+
+#back-to-home img {
+    width: 100%; /* Make image fill the button */
+    height: 100%; /* Make image fill the button */
+    border-radius: 50%; /* Match the button's border radius */
+    object-fit: cover; /* Maintain aspect ratio */
+    transition: filter 0.3s; /* Smooth transition for the filter */
+}
+
+#back-to-home:hover {
+    transform: scale(1.1); /* Slightly grow the button on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9); /* Stronger shadow on hover */
+}
+
+#back-to-home:hover img {
+    filter: drop-shadow(0 0 10px #e74c3c); /* Glow effect and invert on hover */
+}
+
+/* Animation on click */
+#back-to-home:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+    transition: transform 0.1s; /* Quick transition for the active state */
+}

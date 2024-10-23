@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Landing Page</title>
+    <link href="https://fonts.cdnfonts.com/css/horror-type" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/horror-type');
+    </style>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="./Styles/navbar.css" rel="stylesheet" type="text/css" />
+    <link href="./Styles/fog.css" rel="stylesheet" type="text/css" />
+    <link href="./Styles/shrinkbutton.css" rel="stylesheet" type="text/css" />
+    <link href="./Styles/media.css" rel="stylesheet" type="text/css" />
+    <link href="./Styles/footer.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -15,8 +24,8 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#"">Home</a></li>
-                <li><a href="#">Play</a></li>
+                <li><a href="#"">About</a></li>
+                <li><a href="./Game/index.html">Play</a></li>
                 <li><a href="./Rules/index.html">Rules</a></li>
             </ul>
         </nav>
@@ -26,8 +35,8 @@
         <div class="overlay">
             <h1>Welcome to: Murder Mystery Party</h1>
             <p>Ready to play?</p>
-            <button class="shrink-border">Game Start</button>
-            <button class="shrink-border" onclick = "location.href='./Rules/index.html'">How To Play</button>
+            <button id='shrink-border' class="shrink-border" onclick = "location.href='./Game/index.html'">Game Start</button>
+            <button id='shrink-border' class="shrink-border" onclick = "location.href='./HowTo/index.html'">How To Play</button>
         </div>
     </section>
 

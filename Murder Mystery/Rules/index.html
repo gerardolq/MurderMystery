@@ -6,12 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Murder Mystery Party - Rules</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/navbar.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/homeButton.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/fog.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/footer.css" rel="stylesheet" type="text/css" />
+    <link href="./Styles/media.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+
+    <!-- Single Fog Overlay Layer -->
+    <div id="opacity" class="fog-layer"></div>
+
     <header>
-        <h1>Murder Mystery Party</h1>
+        <h1>Rules</h1>
         <p>Welcome to the ultimate murder mystery party! Please read the rules carefully before playing.</p>
+        <nav>
+            <ul>
+                <li><a href="../Game/index.html">Play</a></li>
+                <li><a href="../HowTo/index.html">How To Play</a></li>
+            </ul>
+        </nav>
+        <img src="./images/clue.gif" alt="Clue!" class="header-image">
     </header>
 
     <main>
@@ -41,8 +57,6 @@
     </footer>
     
     <!-- Back to Home Button -->
-    <button id="back-to-home" onclick="location.href='../index.html'">
-        <img src="./images/home.png" alt="Home" />
-    </button>
+    <button id="back-to-home" onclick="location.href='../index.html'"></button>
 </body>
 </html>
