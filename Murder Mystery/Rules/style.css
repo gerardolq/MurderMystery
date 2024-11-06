@@ -28,10 +28,11 @@ header {
 
 .header-image { 
     position: absolute; 
-    top: 175px; /* Adjust as needed */ 
-    right: 40px; /* Adjust as needed */ 
-    width: 100px; /* Adjust the size as needed */ 
-    height: auto; /* Maintain aspect ratio */ 
+    top: 175px; 
+    right: 40px;
+    max-width: 9%;
+    height: auto;
+    z-index: -1;
 }
 
 header h1 {
@@ -46,6 +47,8 @@ header p {
     font-size: 1.2em;
     font-style: italic;
     margin-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
     color: #bdc3c7;
 }
 
