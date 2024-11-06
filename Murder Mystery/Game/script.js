@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json",
-                    Authorization: `Bearer ` // Replace with your actual API key
+                    Authorization: `Bearer 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` // Replace with your actual API key
                 },
                 body: JSON.stringify({
                     model: "babbage-002", // Ensure you're using a valid model

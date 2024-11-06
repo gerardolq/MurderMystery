@@ -54,6 +54,7 @@
     height: 100%;
     background-color: transparent;
     border: 3px solid #ff0000;
+    background-image: url('../images/bloodsplatter.png');
     opacity: 0;
     z-index: -1;
     transform: scaleX(1.1) scaleY(1.3);
