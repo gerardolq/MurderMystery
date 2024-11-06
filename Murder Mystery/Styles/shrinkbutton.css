@@ -2,6 +2,7 @@
     position: relative;
     border: none;
     font-size: 18px;
+    letter-spacing: 2px;
     transition: color 0.5s, transform 0.2s, background-color 0.2s;
     outline: none;
     border-radius: 3px;

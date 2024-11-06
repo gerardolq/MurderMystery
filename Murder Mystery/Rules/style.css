@@ -35,9 +35,10 @@ header {
 }
 
 header h1 {
-    font-size: 3em;
-    letter-spacing: 3px;
-    color: #e74c3c; /* Blood-red color for a spooky vibe */
+    font-family: 'Red Undead', sans-serif;
+    font-size: 4em;
+    letter-spacing: 1px;
+    color: red; /* Blood-red color for a spooky vibe */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
@@ -67,7 +68,8 @@ main {
 }
 
 .rules h2, .tips h2 {
-    font-size: 2em;
+    font-family: 'Horror Type', sans-serif;
+    font-size: 4em;
     color: #e74c3c;
     margin-bottom: 15px;
     text-transform: uppercase;

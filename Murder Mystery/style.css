@@ -39,13 +39,15 @@ header {
 }
 
 .overlay h1 {
+    font-family: 'Red Undead', sans-serif;
     font-size: 8rem;
     margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Enhance readability */
 }
 
 .main h1 {
-    font-size: 8rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
 }
 
