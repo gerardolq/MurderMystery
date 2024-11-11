@@ -1,0 +1,48 @@
+/* Fog Overlay Styles */
+.candle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/candle.jpg') repeat; /* Ensure the path is correct */
+    background-size: cover;
+    opacity: 0.70; /* Adjust opacity for visibility */
+    pointer-events: none; /* Allow clicks to pass through */
+    z-index: -2; /* Ensure it sits above the background but below content */
+    -webkit-animation-duration: 3s;
+    animation-name: animateheader;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes animateheader {
+    0% {
+        opacity: 0.4;
+    }
+    30% {
+       opacity: .7;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes animateheader {
+    0% {
+        opacity: 0.4;
+    }
+    30% {
+       opacity: .7;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}

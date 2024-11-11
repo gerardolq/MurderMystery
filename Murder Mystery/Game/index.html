@@ -6,16 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <style>
         @import url('https://fonts.cdnfonts.com/css/red-undead');
+        @import url('https://fonts.cdnfonts.com/css/halloween-carnival');
         @import url('https://fonts.cdnfonts.com/css/horror-type');
     </style>
     <title>Murder Mystery Party - Game</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="../Styles/homeButton.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/fog.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/candle.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <!-- Back to Home Button -->
     <button id="back-to-home" onclick="location.href='../index.html'"></button>
+    
+    <!-- Single Fog Overlay Layer -->
+    <div id="opacity" class="fog-layer"></div>
+
+    <!-- Single Candle Overlay Layer -->
+    <div class="candle"></div>
+
 
     <h1>Game Story Generator</h1>
     <form id="storyForm">
@@ -37,7 +47,6 @@
     <div id="storyOutput">
         <!-- Generated story will be displayed here -->
     </div>
-    
     <script src="script.js"></script>
 </body>
 </html>
