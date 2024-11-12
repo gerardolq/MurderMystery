@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json",
-                    Authorization: `Bearer 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` // Replace with your actual API key
+                    Authorization: `Bearer #########` // Replace with your actual API key
                 },
                 body: JSON.stringify({
                     model: "babbage-002", // Ensure you're using a valid model
@@ -45,7 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Response status:', response.status);
 
             if (!response.ok) {
-                throw new Error(`Error: ${response.status} - ${response.statusText}`);
+                storyOutput.style.display =  "block";
+                throw new Error(`${response.status} - ${response.JSON} - Please verify that you are using a proper and valid API Key for OpenAPI.`);
             }
 
             const data = await response.json();
@@ -53,8 +54,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Ensure that the response contains choices
             if (data.choices && data.choices.length > 0) {
+                storyOutput.style.display =  "flex";
                 storyOutput.innerHTML = `<h2>Generated Story:</h2><p>${data.choices[0].text}</p>`;
             } else {
+                storyOutput.style.display =  "flex";
                 throw new Error('The API response does not contain any story output.');
             }
         } catch (error) {
@@ -69,6 +72,3 @@ document.addEventListener('DOMContentLoaded', function() {
         return `Create a story for a game with ${inputData.numPlayers} players. The players are described as: ${inputData.playerArchitypes}. The theme or tone of the story should include: ${inputData.theme}. The game should last for about ${inputData.gameLength} minutes.`;
     }
 });
-
-
-/* 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 */

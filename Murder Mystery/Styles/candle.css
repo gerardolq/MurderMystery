@@ -19,7 +19,7 @@
 
 @-webkit-keyframes animateheader {
     0% {
-        opacity: 0.4;
+        opacity: 0.55;
     }
     30% {
        opacity: .7;
@@ -34,7 +34,7 @@
 
 @keyframes animateheader {
     0% {
-        opacity: 0.4;
+        opacity: 0.55;
     }
     30% {
        opacity: .7;
